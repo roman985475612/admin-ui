@@ -23,6 +23,7 @@ const DIST_PATH = 'build'
 const STYLES_LIBS = []
 const JS_LIBS = [
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    './node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js'
 ]
 
 task('create:folders', () => {

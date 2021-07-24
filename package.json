@@ -34,6 +34,7 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.0.0",
     "bootstrap": "^5.0.2"
   }
 }

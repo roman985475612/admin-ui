@@ -7,8 +7,273 @@
     <title>Blogen Admin UI</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link main-menu__link active" aria-current="page" href="index.html">dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="posts.html">posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="categories.html">categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="users.html">users</a>
+              </li>
+            </ul>
 
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle main-menu__link" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        Welcome, Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="profile.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#user-circle-regular"></use>
+                                </svg>
+                                profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="settings.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                                </svg>
+                                settings
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu__link" href="logout.html">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-times-solid"></use>
+                        </svg>
+                        logout                
+                    </a>
+                </li>            
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-header__title">
+                        <svg class="main-header__icon">
+                            <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                        </svg>
+                        dashboard
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.main-header -->
+
+    <section class="actions">
+        <div class="container">
+            <div class="row actions__btns">
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-primary actions__btn" id="addPost">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#plus-circle-solid"></use>
+                            </svg>
+                            add post
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-success actions__btn" id="addCategory">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#plus-circle-solid"></use>
+                            </svg>
+                            add category
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-warning actions__btn" id="addUser">
+                            <svg class="actions__icon actions__icon--black">
+                                <use xlink:href="icons/sprite.svg#plus-circle-solid"></use>
+                            </svg>
+                            add user
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.actions -->
+
+    <section class="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>latest posts</h4>
+                        </div>
+                        <table class="table table-hover table-striped">
+                            <thead class="bg-dark text-white">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">title</th>
+                                <th scope="col">category</th>
+                                <th scope="col">date</th>
+                                <th scope="col">action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>post one</td>
+                                <td>web development</td>
+                                <td>may 10, 2018</td>
+                                <td>
+                                    <a href="detail.html" class="btn btn-secondary posts__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="icons/sprite.svg#angle-double-right-solid"></use>
+                                        </svg>            
+                                        detail
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>post two</td>
+                                <td>tech gadgets</td>
+                                <td>march 21, 2020</td>
+                                <td>
+                                    <a href="detail.html" class="btn btn-secondary posts__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="icons/sprite.svg#angle-double-right-solid"></use>
+                                        </svg>            
+                                        detail
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>post three</td>
+                                <td>web development</td>
+                                <td>june 5, 2021</td>
+                                <td>
+                                    <a href="detail.html" class="btn btn-secondary posts__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="icons/sprite.svg#angle-double-right-solid"></use>
+                                        </svg>            
+                                        detail
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>post four</td>
+                                <td>business</td>
+                                <td>january 17, 2018</td>
+                                <td>
+                                    <a href="detail.html" class="btn btn-secondary posts__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="icons/sprite.svg#angle-double-right-solid"></use>
+                                        </svg>            
+                                        detail
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>post five</td>
+                                <td>health & wellness</td>
+                                <td>may 9, 2018</td>
+                                <td>
+                                    <a href="detail.html" class="btn btn-secondary posts__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="icons/sprite.svg#angle-double-right-solid"></use>
+                                        </svg>            
+                                        detail
+                                    </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="col-md-3 widgets">
+                    <div class="card widgets__item widgets__item--primary">
+                        <div class="card-body">
+                            <h3 class="widgets__title">posts</h3>
+                            <div class="widgets__box">
+                                <svg class="widgets__icon">
+                                    <use xlink:href="icons/sprite.svg#pencil-alt-solid"></use>
+                                </svg>
+                                <span class="widgets__info">6</span>    
+                            </div>
+                            <a href="posts.html" class="btn btn-outline-light">view</a>
+                        </div>
+                    </div>
+                    <div class="card widgets__item widgets__item--success">
+                        <div class="card-body">
+                            <h3 class="widgets__title">categories</h3>
+                            <div class="widgets__box">
+                                <svg class="widgets__icon">
+                                    <use xlink:href="icons/sprite.svg#folder-solid"></use>
+                                </svg>
+                                <span class="widgets__info">4</span>    
+                            </div>
+                            <a href="categories.html" class="btn btn-outline-light">view</a>
+                        </div>
+                    </div>
+                    <div class="card widgets__item widgets__item--warning">
+                        <div class="card-body">
+                            <h3 class="widgets__title">users</h3>
+                            <div class="widgets__box">
+                                <svg class="widgets__icon">
+                                    <use xlink:href="icons/sprite.svg#users-solid"></use>
+                                </svg>
+                                <span class="widgets__info">4</span>    
+                            </div>
+                            <a href="users.html" class="btn btn-outline-light">view</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.posts -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="main-footer__copy">
+                        Copyright &copy; 2021 Blogen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.main-footer -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -6,3 +6,11 @@
 @import 'params';
 @import 'mixins';
 @import 'base';
+
+// Blocks
+@import 'blocks/main-menu';
+@import 'blocks/main-header';
+@import 'blocks/actions';
+@import 'blocks/posts';
+@import 'blocks/widgets';
+@import 'blocks/main-footer';
