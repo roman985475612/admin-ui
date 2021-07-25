@@ -8,6 +8,11 @@
         justify-content: center;
         align-items: center;
         text-transform: capitalize;
+        color: $white !important;
+
+        &:hover {
+            color: $white !important;
+        }
     }
 
     &__icon {
@@ -15,10 +20,5 @@
 		width: $spacer;
 		height: $spacer;
         fill: $white;
-
-        &--black {
-            fill: $black;
-        }
     }
-
 }

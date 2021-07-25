@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Login | Blogen Admin UI</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Blogen</a>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-header__title">
+                        <svg class="main-header__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        blogen admin
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.main-header -->
+
+    <section class="profile mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>account login</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="index.html">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="submit">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.detail -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="main-footer__copy">
+                        Copyright &copy; 2021 Blogen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.main-footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

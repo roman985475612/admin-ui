@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Details | Blogen Admin UI</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="index.html">dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="posts.html">posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="categories.html">categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="users.html">users</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle main-menu__link" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        Welcome, Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="profile.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#user-circle-regular"></use>
+                                </svg>
+                                profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="settings.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                                </svg>
+                                settings
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu__link" href="logout.html">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-times-solid"></use>
+                        </svg>
+                        logout                
+                    </a>
+                </li>            
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-header__title">
+                        post one
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.main-header -->
+
+    <section class="actions">
+        <div class="container">
+            <div class="row actions__btns">
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-info actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#arrow-circle-left-solid"></use>
+                            </svg>
+                            back to dashboard
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-success actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#check-circle-solid"></use>
+                            </svg>
+                            save changes
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-danger actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#trash-alt-solid"></use>
+                            </svg>
+                            delete post
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.actions -->
+
+    <section class="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>edit post</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                        value="Post One"
+                                    >
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="postCat" class="form-label">Category</label>
+                                    <select id="postCat" class="form-select">
+                                        <option value="">Web Development</option>
+                                        <option value="" selected>Tech Gadgets</option>
+                                        <option value="">Business</option>
+                                        <option value="">Health & Wellness</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Default file input example</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dicta ea mollitia consequatur doloribus suscipit aperiam laudantium quod voluptates eum repudiandae ex recusandae, ullam sequi!</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.detail -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="main-footer__copy">
+                        Copyright &copy; 2021 Blogen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.main-footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

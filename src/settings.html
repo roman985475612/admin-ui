@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Settings | Blogen Admin UI</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="index.html">dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="posts.html">posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="categories.html">categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="users.html">users</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle main-menu__link" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        Welcome, Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="profile.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#user-circle-regular"></use>
+                                </svg>
+                                profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="settings.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                                </svg>
+                                settings
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu__link" href="logout.html">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-times-solid"></use>
+                        </svg>
+                        logout                
+                    </a>
+                </li>            
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-header__title">
+                        <svg class="main-header__icon">
+                            <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                        </svg>
+                        settings
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.main-header -->
+
+    <section class="actions">
+        <div class="container">
+            <div class="row actions__btns">
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-info actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#arrow-circle-left-solid"></use>
+                            </svg>
+                            back to dashboard
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-success actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#check-circle-solid"></use>
+                            </svg>
+                            save changes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.actions -->
+
+    <section class="settings">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>edit settings</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="allowUserRegistr" checked>
+                                    <label class="form-check-label" for="allowUserRegistr">allow user registration</label>
+                                </div>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="homePage" checked>
+                                    <label class="form-check-label" for="homePage">home page format</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.detail -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="main-footer__copy">
+                        Copyright &copy; 2021 Blogen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.main-footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            ClassicEditor
+                .create(document.querySelector( 'textarea' ))
+                .catch( error => {
+                    console.error( error );
+                })
+        })
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

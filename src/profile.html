@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Profile | Blogen Admin UI</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="index.html">dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="posts.html">posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="categories.html">categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-menu__link" href="users.html">users</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle main-menu__link" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        Welcome, Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="profile.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#user-circle-regular"></use>
+                                </svg>
+                                profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item main-menu__dropdown-item" href="settings.html">
+                                <svg class="main-menu__icon main-menu__icon--dropdown">
+                                    <use xlink:href="icons/sprite.svg#cog-solid"></use>
+                                </svg>
+                                settings
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu__link" href="logout.html">
+                        <svg class="main-menu__icon">
+                            <use xlink:href="icons/sprite.svg#user-times-solid"></use>
+                        </svg>
+                        logout                
+                    </a>
+                </li>            
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-header__title">
+                        <svg class="main-header__icon">
+                            <use xlink:href="icons/sprite.svg#user-solid"></use>
+                        </svg>
+                        edit profile
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.main-header -->
+
+    <section class="actions">
+        <div class="container">
+            <div class="row actions__btns">
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-info actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#arrow-circle-left-solid"></use>
+                            </svg>
+                            back to dashboard
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-success actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#lock-solid"></use>
+                            </svg>
+                            change password
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-grid gap-2">
+                        <a href="posts.html" class="btn btn-danger actions__btn">
+                            <svg class="actions__icon">
+                                <use xlink:href="icons/sprite.svg#trash-alt-solid"></use>
+                            </svg>
+                            delete account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.actions -->
+
+    <section class="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>edit profile</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name"value="John Doe">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"value="jdoe@example.com">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bio" class="form-label">Bio</label>
+                                    <textarea class="form-control" id="bio" rows="3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dicta ea mollitia consequatur doloribus suscipit aperiam laudantium quod voluptates eum repudiandae ex recusandae, ullam sequi!</textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-3 avatar">
+                    <h3 class="avatar__title">your avatar</h3>
+                    <picture>
+                        <source srcset="img/avatar.webp" type="image/webp">
+                        <img src="img/avatar.png" alt="avatar" class="avatar__img">
+                    </picture>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary avatar__btn" type="button">edit image</button>
+                        <button class="btn btn-danger avatar__btn" type="button">delete image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.detail -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="main-footer__copy">
+                        Copyright &copy; 2021 Blogen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.main-footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            ClassicEditor
+                .create(document.querySelector( 'textarea' ))
+                .catch( error => {
+                    console.error( error );
+                })
+        })
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
